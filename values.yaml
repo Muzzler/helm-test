@@ -1,0 +1,13 @@
+db:
+    appname: words-db
+    image: docker-registry:5000/db:v1
+    port: 5432
+api:
+    appname: words-api
+    image: docker-registry:5000/api:v1
+    port: 8080
+    replicas: 5
+web:
+    appname: words-web
+    image: docker-registry:5000/web:v1
+    port: 80
